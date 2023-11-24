@@ -1,0 +1,77 @@
+.pillars-row-wrapper{
+    background-color: #344762;
+    height: 100%;
+    .islam-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 10px 20px 10px;
+        gap: 20px;
+        .back-btn-islam{
+            width: 65px;
+            border-radius: 7px;
+            transition: 0.4s;
+            border: solid 1px bisque;
+            color: wheat;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s;
+            &:hover {
+                opacity: 0.9;
+                background-color: #425a7c;
+                box-shadow: 0 6px 16px -8px #00000014, 0 9px 28px #0000000d, 0 12px 48px 16px #00000008;
+                border: 1px solid bisque;
+            }
+
+            
+            &:active {
+                transform: scale(0.98);
+            }
+
+            &:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+        }
+        .heading-pillar{
+            font-size: 70px;
+            color: bisque;
+            font-family: auto;
+            letter-spacing: 2px;
+            text-align: center;
+            @media (min-width: 768px) and (max-width: 992px) {
+                font-size: 50px;
+                line-height: 40px;
+            }
+            @media (min-width: 0px) and (max-width: 768px) {
+                font-size: 40px;
+                line-height: 40px;
+                margin: unset;
+            }
+        }
+        .content-pillar-wrapper{
+            padding-bottom: 40px;
+            .overview-heading{
+                font-size: 38px;
+                color: bisque;
+                text-align: left;
+                font-weight: 600;
+                padding-bottom: 20px;
+                @media (min-width: 0px) and (max-width: 768px) {
+                    font-size: 24px;
+                }
+            }
+            .overview-text{
+                font-size: 15px;
+                color: bisque;
+                text-align: left;
+                @media (min-width: 0px) and (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
